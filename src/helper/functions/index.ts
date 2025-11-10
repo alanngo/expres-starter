@@ -1,1 +1,1 @@
-export {}
+export const indexObject = (obj: any, k: string) => (obj as {[key: string]: any})[k]
