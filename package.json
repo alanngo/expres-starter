@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "clean": "rm -rf build",
-    "purge": "npm run clean && rm -rf node_modules package-lock.json",
-    "build": "npm run clean && tsc --project ./tsconfig.json && node build",
+    "purge": "rm -rf build && rm -rf node_modules package-lock.json",
+    "build": "rm -rf build && tsc --project ./tsconfig.json && node build",
     "dev": "nodemon -e ts",
     "docker":"docker",
     "docker:init":"docker build -t express-ts .",
