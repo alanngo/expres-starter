@@ -2,7 +2,7 @@ import express from "express";
 import { HOST, PORT } from "./config/env";
 import middlewares from "./middlewares";
 import { DEBUG, INFO } from "./utils/logger";
-import handlers from "./middlewares/error_handler";
+import handlers from "./handlers";
 import routes from "./routes";
 
 const app = express()
